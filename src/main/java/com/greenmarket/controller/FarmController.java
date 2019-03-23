@@ -1,5 +1,7 @@
 package com.greenmarket.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,15 +13,15 @@ import com.greenmarket.service.IFarmService;
 @Controller("/farm")
 public class FarmController {
 	@Autowired
-	private IFarmService farmService;
+	private IFarmService _farmService;
 	
 	
 	@RequestMapping("/create")
 	public String getAllFarmByUser(Model model)
 	{
-		
-		
-		model.addAttribute("a",model);
+		int userId = 1;
+		List<Farm> lstFarm = _farmService.getAllByUserId(userId);
+		model.addAttribute("lstFarm",lstFarm);
 		return "Farm";
 	}
 	

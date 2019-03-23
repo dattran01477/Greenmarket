@@ -115,6 +115,14 @@
 			<artifactId>tiles-extras</artifactId>
 			<version>3.0.7</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jsp-api -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>jsp-api</artifactId>
+		    <version>2.0</version>
+		    <scope>provided</scope>
+		</dependency>
+		
 	</dependencies>
 	<build>
 		<finalName>greenmarket</finalName>

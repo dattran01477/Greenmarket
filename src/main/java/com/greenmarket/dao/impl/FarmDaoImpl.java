@@ -2,11 +2,16 @@ package com.greenmarket.dao.impl;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.hibernate.Query;
+import org.springframework.stereotype.Repository;
 
 import com.greenmarket.dao.IFarmDao;
 import com.greenmarket.entity.Farm;
 
+@Repository
+@Transactional
 public class FarmDaoImpl extends AbstractDao<Integer, Farm> implements IFarmDao {
 
 	@Override

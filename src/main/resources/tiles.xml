@@ -13,7 +13,15 @@
 			/>
 	</definition>
 
-	<!-- home Page -->
+
+	
+	<definition name="Farm" extends="base.definition">
+		<!-- <put-attribute name="title" value="Farm Page" /> -->
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Farm/Index.jsp" />
+	</definition>
+				
+	<!-- Home Page -->
 	<definition name="Home" extends="base.definition">
 		<!-- <put-attribute name="title" value="Home Page" /> -->
 		<put-attribute name="body"
@@ -26,6 +34,25 @@
 		<put-attribute name="body"
 			value="/WEB-INF/pages/Farm/Index.jsp" />
 	</definition>
+	
+	
+	<!-- Base Account-->
+	<definition name="base.account"
+		template="/WEB-INF/pages/layouts/account.jsp">
+				<put-attribute name="body" value="" />
+	</definition>
+	<!-- Register -->
+	<definition name="Register" extends="base.account">
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Account/Register.jsp" />
+	</definition>
+	<definition name="Login" extends="base.account">
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Account/Login.jsp" />
+	</definition>
+
+	
+	
 
 
 </tiles-definitions>

@@ -10,13 +10,13 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#">Primary</a>
+                            <a class="navbar-brand" href="#">BoomGM</a>
                         </div>
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="navigation-example-2">
                             <ul class="nav navbar-nav">
-                                <a href="#" class="btn btn-primary btn-simple">Link</a>
-                                <a href="#" target="_blank" class="btn btn-primary btn-fill">Button</a>
+                                <a href="#" target="_blank" class="btn btn-primary">Trang chủ</a>
+                                <a href="#" target="_blank" class="btn btn-primary ">Nông sản</a>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
                                 <li>

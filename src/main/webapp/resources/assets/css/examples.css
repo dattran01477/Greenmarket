@@ -43,7 +43,7 @@
   color: #FFF; }
 
 .register-background {
-  background-image: url("../paper_img/landscape.jpg");
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
@@ -52,6 +52,7 @@
   width: 100%; }
 
 .register-background .filter-black::after {
+
   background-color: rgba(0, 0, 0, 0.5);
   content: "";
   display: block;
@@ -100,7 +101,7 @@
   text-align: center; }
 
 .profile-background {
-  background-image: url("../paper_img/lamp.jpg");
+  background-image: url("static/paper_img/lamp.jpg");
   background-position: center center;
   background-size: cover;
   height: 300px;
