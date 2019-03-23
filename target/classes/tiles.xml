@@ -7,49 +7,18 @@
 	<!-- Base Define -->
 	<definition name="base.definition"
 		template="/WEB-INF/pages/layouts/defaultlayout.jsp">
-		<!-- <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" 
-			/> -->
-		<put-attribute name="menu"
-			value="/WEB-INF/pages/layouts/menu.jsp" />
+		<put-attribute name="header" value="/WEB-INF/pages/layouts/header.jsp" />
 		<put-attribute name="body" value="" />
-		<!-- <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" 
-			/> -->
+		<put-attribute name="footer" value="/WEB-INF/pages/layouts/footer.jsp" 
+			/>
 	</definition>
 
-	<!-- chitietchitieungay Page -->
-	<definition name="chitietchitieu" extends="base.definition">
+	<!-- home Page -->
+	<definition name="Home" extends="base.definition">
 		<!-- <put-attribute name="title" value="Home Page" /> -->
 		<put-attribute name="body"
-			value="/WEB-INF/pages/ChiTieu/chitietchitieungay.jsp" />
+			value="/WEB-INF/pages/Home/Home.jsp" />
 	</definition>
 
-
-	<!-- themchitieu Page -->
-	<definition name="themchitieu" extends="base.definition">
-		<!-- <put-attribute name="title" value="Home Page" /> -->
-		<put-attribute name="body"
-			value="/WEB-INF/pages/ChiTieu/themchitieu.jsp" />
-	</definition>
-	
-	<!-- todotolist Page -->
-	<definition name="todotolist" extends="base.definition">
-		<!-- <put-attribute name="title" value="Home Page" /> -->
-		<put-attribute name="body"
-			value="/WEB-INF/pages/ToDoToList/todotolist.jsp" />
-	</definition>
-	
-
-
-	<!-- Login Template -->
-	<definition name="base.login"
-		template="/WEB-INF/pages/layouts/login.jsp">
-		<put-attribute name="body" value="" />
-	</definition>
-
-	<!-- login Page -->
-	<definition name="login" extends="base.login">
-		<put-attribute name="body"
-			value="/WEB-INF/pages/Login/login.jsp" />
-	</definition>
 
 </tiles-definitions>
