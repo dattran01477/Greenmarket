@@ -19,6 +19,13 @@
 		<put-attribute name="body"
 			value="/WEB-INF/pages/Home/Home.jsp" />
 	</definition>
+	
+	<!-- farm Page -->
+	<definition name="Farm" extends="base.definition">
+		<!-- <put-attribute name="title" value="Home Page" /> -->
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Farm/Index.jsp" />
+	</definition>
 
 
 </tiles-definitions>
