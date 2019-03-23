@@ -5,8 +5,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.greenmarket.entity.Commentpost;
 
-@Repository
-@Transactional
+
 public interface ICommentpostDao extends IGenericDao<Integer, Commentpost> {
 
 }

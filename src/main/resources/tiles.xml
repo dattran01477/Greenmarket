@@ -34,7 +34,49 @@
 		<put-attribute name="body"
 			value="/WEB-INF/pages/Farm/Index.jsp" />
 	</definition>
+	<!-- add farm Page -->
+	<definition name="AddFarm" extends="base.definition">
+		<!-- <put-attribute name="title" value="Home Page" /> -->
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Farm/Add.jsp" />
+	</definition>
+	<!-- edit farm Page -->
+	<definition name="EditFarm" extends="base.definition">
+		<!-- <put-attribute name="title" value="Home Page" /> -->
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Farm/Edit.jsp" />
+	</definition>
+	<!-- list farm Page -->
+	<definition name="ListFarm" extends="base.definition">
+		<!-- <put-attribute name="title" value="Home Page" /> -->
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Farm/List.jsp" />
+	</definition>
 	
+	<!-- goods Page -->
+	<definition name="Goods" extends="base.definition">
+		<!-- <put-attribute name="title" value="Home Page" /> -->
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Goods/Index.jsp" />
+	</definition>
+	<!-- add goods Page -->
+	<definition name="AddGoods" extends="base.definition">
+		<!-- <put-attribute name="title" value="Home Page" /> -->
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Goods/Add.jsp" />
+	</definition>
+	<!-- edit goods Page -->
+	<definition name="EditGoods" extends="base.definition">
+		<!-- <put-attribute name="title" value="Home Page" /> -->
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Goods/Edit.jsp" />
+	</definition>
+	<!-- list goods Page -->
+	<definition name="ListGoods" extends="base.definition">
+		<!-- <put-attribute name="title" value="Home Page" /> -->
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Goods/List.jsp" />
+	</definition>
 	
 	<!-- Base Account-->
 	<definition name="base.account"

@@ -51,7 +51,7 @@
                                     <label>Mật khẩu</label>
                                     <u:input type="password" class="form-control" placeholder="Password" path="password" />
                                    
-                                    <button type="submit" class="btn btn-danger btn-block">Register</button>
+                                    <button type="submit" class="btn btn-danger btn-block">Login</button>
                                    
                                 </u:form>
 

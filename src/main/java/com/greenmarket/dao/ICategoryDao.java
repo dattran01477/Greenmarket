@@ -5,8 +5,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.greenmarket.entity.Category;
 
-@Repository
-@Transactional
+
 public interface ICategoryDao extends IGenericDao<Integer, Category> {
 		
 }

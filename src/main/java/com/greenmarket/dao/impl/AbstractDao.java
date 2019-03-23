@@ -13,7 +13,6 @@ import com.greenmarket.ultils.ClassUltil;
 
 
 
-
 @Transactional
 public  class AbstractDao<ID extends Serializable,T> implements IGenericDao<ID, T> {
 

@@ -2,3 +2,4 @@ eclipse.preferences.version=1
 encoding//src/main/java/com/greenmarket/configuration/WebSecurityConfig.java=UTF-8
 encoding//src/main/webapp/WEB-INF/pages/Account/Login.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/pages/Account/Register.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/pages/Farm/Add.jsp=UTF-8

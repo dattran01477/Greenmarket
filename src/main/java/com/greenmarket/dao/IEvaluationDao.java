@@ -5,8 +5,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.greenmarket.entity.Evaluation;
 
-@Repository
-@Transactional
+
 public interface IEvaluationDao extends IGenericDao<Integer, Evaluation> {
 
 }

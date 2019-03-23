@@ -1,4 +1,4 @@
-/*package com.greenmarket.configuration;
+package com.greenmarket.configuration;
 
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 
@@ -6,4 +6,3 @@ public class SpringSecurityInitializer extends AbstractSecurityWebApplicationIni
 
 
 }
-*/
