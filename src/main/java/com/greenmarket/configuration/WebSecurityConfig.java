@@ -10,9 +10,7 @@ import com.greenmarket.athentication.MyDBAuthenticationService;
 
 
 
-@Configuration
-//@EnableWebSecurity = @EnableWebMVCSecurity + Extra features
-@EnableWebSecurity
+
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	/*@Autowired
