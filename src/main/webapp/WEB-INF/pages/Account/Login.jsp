@@ -43,13 +43,13 @@
                         <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 ">
                             <div class="register-card">
                                 <h3 class="title"></h3>
-                                <u:form class="register-form" method="POST" action="login" modelAttribute="refix">
+                                <u:form class="register-form" method="POST" action="j_spring_security_check" modelAttribute="refix">
                                     <label>Tài khoản</label>
  
-                                    <u:input type="text" class="form-control" placeholder="Email" path="username"/>
+                                    <u:input type="text" class="form-control" placeholder="Email" path="username" name="username"/>
 
                                     <label>Mật khẩu</label>
-                                    <u:input type="password" class="form-control" placeholder="Password" path="password" />
+                                    <u:input type="password" class="form-control" name="password" placeholder="Password" path="password" />
                                    
                                     <button type="submit" class="btn btn-danger btn-block">Register</button>
                                    

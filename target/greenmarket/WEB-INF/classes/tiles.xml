@@ -7,49 +7,52 @@
 	<!-- Base Define -->
 	<definition name="base.definition"
 		template="/WEB-INF/pages/layouts/defaultlayout.jsp">
-		<!-- <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" 
-			/> -->
-		<put-attribute name="menu"
-			value="/WEB-INF/pages/layouts/menu.jsp" />
+		<put-attribute name="header" value="/WEB-INF/pages/layouts/header.jsp" />
 		<put-attribute name="body" value="" />
-		<!-- <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" 
-			/> -->
-	</definition>
-
-	<!-- chitietchitieungay Page -->
-	<definition name="chitietchitieu" extends="base.definition">
-		<!-- <put-attribute name="title" value="Home Page" /> -->
-		<put-attribute name="body"
-			value="/WEB-INF/pages/ChiTieu/chitietchitieungay.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/pages/layouts/footer.jsp" 
+			/>
 	</definition>
 
 
-	<!-- themchitieu Page -->
-	<definition name="themchitieu" extends="base.definition">
+	
+	<definition name="Farm" extends="base.definition">
+		<!-- <put-attribute name="title" value="Farm Page" /> -->
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Farm/Index.jsp" />
+	</definition>
+				
+	<!-- Home Page -->
+	<definition name="Home" extends="base.definition">
 		<!-- <put-attribute name="title" value="Home Page" /> -->
 		<put-attribute name="body"
-			value="/WEB-INF/pages/ChiTieu/themchitieu.jsp" />
+			value="/WEB-INF/pages/Home/Home.jsp" />
 	</definition>
 	
-	<!-- todotolist Page -->
-	<definition name="todotolist" extends="base.definition">
+	<!-- farm Page -->
+	<definition name="Farm" extends="base.definition">
 		<!-- <put-attribute name="title" value="Home Page" /> -->
 		<put-attribute name="body"
-			value="/WEB-INF/pages/ToDoToList/todotolist.jsp" />
+			value="/WEB-INF/pages/Farm/Index.jsp" />
 	</definition>
 	
-
-
-	<!-- Login Template -->
-	<definition name="base.login"
-		template="/WEB-INF/pages/layouts/login.jsp">
-		<put-attribute name="body" value="" />
+	
+	<!-- Base Account-->
+	<definition name="base.account"
+		template="/WEB-INF/pages/layouts/account.jsp">
+				<put-attribute name="body" value="" />
 	</definition>
-
-	<!-- login Page -->
-	<definition name="login" extends="base.login">
+	<!-- Register -->
+	<definition name="Register" extends="base.account">
 		<put-attribute name="body"
-			value="/WEB-INF/pages/Login/login.jsp" />
+			value="/WEB-INF/pages/Account/Register.jsp" />
 	</definition>
+	<definition name="Login" extends="base.account">
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Account/Login.jsp" />
+	</definition>
+
+	
+	
+
 
 </tiles-definitions>

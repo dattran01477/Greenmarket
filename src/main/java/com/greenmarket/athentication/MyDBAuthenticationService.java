@@ -3,16 +3,25 @@ package com.greenmarket.athentication;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
-public class MyDBAuthenticationService {
+import com.greenmarket.dao.IUserDao;
+import com.greenmarket.entity.User;
 
-	/*@Autowired
-	UserDao userDao;
+@Service
+@Transactional
+public class MyDBAuthenticationService implements UserDetailsService {
+
+	@Autowired
+	IUserDao userDao;
 
 	@Override
 	public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
@@ -23,7 +32,7 @@ public class MyDBAuthenticationService {
 	            throw new UsernameNotFoundException("User " + userName + " was not found in the database");
 	        }
 		// [USER,ADMIN,..]
-        String role= user.getRole().getRolename();
+        String role="USER";
          
         List<GrantedAuthority> grantList= new ArrayList<GrantedAuthority>();
         if(role!=null)
@@ -40,5 +49,5 @@ public class MyDBAuthenticationService {
                 user.getPassword(),grantList);
  
         return userDetails;
-	}*/
+	}
 }

@@ -82,7 +82,7 @@ public class SpringConfig extends WebMvcConfigurerAdapter {
 		DriverManagerDataSource dataSource=new DriverManagerDataSource();
 		dataSource.setDriverClassName(enviroment.getProperty("driver"));
 		dataSource.setUrl(enviroment.getProperty("url"));
-		dataSource.setUsername(enviroment.getProperty("username"));
+		dataSource.setUsername("root");
 		dataSource.setPassword("12345");
 		return dataSource;
 	}
