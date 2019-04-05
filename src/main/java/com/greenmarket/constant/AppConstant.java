@@ -1,9 +1,9 @@
 package com.greenmarket.constant;
 
+import com.greenmarket.entity.Category;
+
 public class AppConstant {
 
-	public AppConstant() {
-		// TODO Auto-generated constructor stub
-	}
+	
 
 }

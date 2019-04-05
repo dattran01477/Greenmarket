@@ -2,7 +2,7 @@ package com.greenmarket.service;
 
 import java.util.List;
 
-import com.greenmarket.model.Good;
+import com.greenmarket.entity.Good;
 
 public interface IGoodService {
 	public List<Good> getAll();
@@ -14,4 +14,6 @@ public interface IGoodService {
 	public void update(Good objetc);
 	
 	public void delete(int id);
+	
+	public List<Good> getAllByUser(int id);
 }

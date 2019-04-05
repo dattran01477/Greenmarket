@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/png" href='<c:url  value="/static/assets/paper_img/favicon.ico"></c:url>'>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Paper Kit by Creative Tim</title>
+	<title>BooM Green Maret</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -24,11 +24,34 @@
 </head>
 
 <body>
+
+
+
 <div class="wrapper">
+<!-- Subiz -->
+<script>
+  (function(s, u, b, i, z){
+    u[i]=u[i]||function(){
+      u[i].t=+new Date();
+      (u[i].q=u[i].q||[]).push(arguments);
+    };
+    z=s.createElement('script');
+    var zz=s.getElementsByTagName('script')[0];
+    z.async=1; z.src=b; z.id='subiz-script';
+    zz.parentNode.insertBefore(z,zz);
+  })(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
+  subiz('setAccount', 'acqhfxefsnrkglidjnwp');
+</script>
+<!-- End Subiz -->
+
+
 		<tiles:insertAttribute name="header" />
 		<tiles:insertAttribute name="body" />
 		<tiles:insertAttribute name="footer" />
 	</div>
+	
+	
+	
 </body>
 
 <script src='<c:url value="/static/assets/js/jquery-1.10.2.js"></c:url>' type="text/javascript"></script>

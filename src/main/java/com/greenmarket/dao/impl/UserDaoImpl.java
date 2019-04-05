@@ -12,10 +12,11 @@ import com.greenmarket.entity.User;
 @Transactional
 public class UserDaoImpl extends AbstractDao<Integer, User> implements IUserDao {
 	@Override
-	public User getUserByName(String userName) {
-		String sql="FROM User E WHERE E.username=:username";
+	public User getUserByName(String username) {
+		String sql="FROM User E WHERE E.username=:userName";
 		Query query=sessionFactory.getCurrentSession().createQuery(sql);
-		query.setParameter("userName", userName);
+		query.setParameter("userName", username);
 		return (User) query.uniqueResult();
+		
 	}
 }

@@ -1,6 +1,6 @@
   <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>   
-        <div class="section section-nude section-with-space">
+        <div class="section section-nude section-with-space" style="background-color:#8be5b7">
             <div class="container tim-container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">

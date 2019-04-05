@@ -28,8 +28,7 @@ public class PostService implements IPostService {
 
 	@Override
 	public Post getByid(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return _postDao.getByid(id);
 	}
 
 	@Override

@@ -19,9 +19,9 @@ public class Good implements Serializable {
 	@Id
 	private int id;
 
+	private int view;
+	
 	private Timestamp createdtime;
-
-	private String goodscol;
 
 	private String images;
 
@@ -64,13 +64,6 @@ public class Good implements Serializable {
 		this.createdtime = createdtime;
 	}
 
-	public String getGoodscol() {
-		return this.goodscol;
-	}
-
-	public void setGoodscol(String goodscol) {
-		this.goodscol = goodscol;
-	}
 
 	public String getImages() {
 		return this.images;
@@ -140,6 +133,14 @@ public class Good implements Serializable {
 
 	public void setFarmBean(Farm farmBean) {
 		this.farmBean = farmBean;
+	}
+
+	public int getView() {
+		return view;
+	}
+
+	public void setView(int view) {
+		this.view = view;
 	}
 
 }

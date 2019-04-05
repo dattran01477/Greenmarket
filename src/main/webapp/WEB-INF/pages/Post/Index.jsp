@@ -7,17 +7,14 @@
        <img src="${pageContext.request.contextPath}/static/assets/paper_img/traicheri.jpg" alt="Rounded Image" class="img-rounded img-responsive">
       </div>
       <div class="col-sm-5">
-        <h2> <b> ${farm.farmer }</b></h2>
+        <h2> <b> ${post.title}</b></h2>
         <hr>
-        <h5> Địa chỉ <a href="#">  ${farm.address}</a></h5>
-        <br>
-        Đánh giá  : 
-        <c:forEach var="i" begin="1" end="4" >
-        	<i class="fa fa-star"></i>       
-        </c:forEach>
+        <h4> Bài viết được tạo bởi<a href="#"> ${post.user.name}</a></h4>
+        <h5> Ngày đăng ${post.createdtime} </h5>
+        
         <br>
         <br>
-        Liên lạc   :  ${farm.phone}
+        Lượt xem   : 174
         <i class="fa fa-eye"></i>
         
       </div>
@@ -27,13 +24,7 @@
     <div class="col-md-8 col-md-offset-2">
         <h2 class="text-center" style="margin-bottom:20px"> Giới thiệu nông sản</h2>
     
-    	<p>What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-   	<p>What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	<p>What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    
+    	<p> ${post.content }
     
     </div>
     </div>
@@ -57,7 +48,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <img src="assets/paper_img/new_logo.png" alt="Creative Tim Logo">
                 </div>
                 <h3>
-                    Creative Tim
+                    Thành Đồng
                 </h3>
             </div>
 

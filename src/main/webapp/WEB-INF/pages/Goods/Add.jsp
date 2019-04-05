@@ -9,7 +9,7 @@
                         <div class="col-md-8 col-md-offset-2">
                             <h2 class="text-center">Thêm thông tin nông sản</h2>
                             <hr>
-                            <u:form class="contact-form" method="POST" action="addGoods" modelAttribute="Goods">
+                            <u:form class="contact-form" method="POST" action="create" modelAttribute="Goods">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label>Tên nông sản</label>
@@ -33,6 +33,12 @@
                                       <%--   <u:select class="form-control" path="category">
                                         	<option> Đồng đẹp trai </option>
                                     	</u:select> --%>
+                                    	
+                                    	<u:select class="form-control" path="categoryid">
+											<u:options items="${lsCategory}" itemValue="id"
+												itemLabel="name" />
+										</u:select>
+										
                                     </div>
                                 </div>
                                 
@@ -40,10 +46,14 @@
                               
                               	<div class="row">
                                     <div class="col-md-12">
-                                        <label>Nhà vườn sỡ hữu</label>
+                                        <label>Nhà vườn sở hữu</label>
                                        <%--  <u:select class="form-control" path="farm">
                                         	<option> Nhà của đồng đẹp trai hết sức</option>
                                     	</u:select> --%>
+                                    	<%-- <u:select class="form-control" path="categoryid">
+											<u:options items="${lsfarm}" itemValue="id"
+												itemLabel="farmer" />
+										</u:select> --%>
                                     </div>
                                 </div>
                                 
